@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: dimgrey;
+}
+
+#field {
+    display: grid;
+    grid: repeat(14, 5vh) / repeat(18, 5vh);
+}
+
+/* inactive light */
+.cell {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 3.5vh;
+    font-family: arial;
+    background-color: peachpuff;
+}
+
+/* inactive dark */
+.dark {
+    background-color: tan;
+}
+
+/* active light */
+.active {
+    background-color: greenyellow;
+}
+
+/* active dark */
+.active.dark {
+    background-color: limegreen;
+}
+
+.active:hover,
+.active.dark:hover {
+    background-color: lemonchiffon;
+}
